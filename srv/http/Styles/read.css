@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.book-container{
+    display:flex;
+    justify-content: center;
+    margin: 60px 20px 20px 20px;
+}
+
+.book-content{
+    max-width: 1600px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-content button{
+    background-color: lightgrey;
+    border-right: solid 1px darkgrey;
+    border-left: solid 1px darkgrey;
+    font-size: 30px;
+    box-shadow: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+.book-content .hover-effect:hover{
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+.topMenu{
+    padding: 10px 0;
+    background-color: lightgrey;
+    border: solid 1px darkgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BookTitle{
+    margin-left: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.bottomMenu{
+    min-height: 20px;
+    background-color: lightgrey;
+    border: solid 1px darkgrey;
+
+}
+
+#currentPage a{
+    color: purple;
+}
+
+.pageSelection{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.pageSelectionInput{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: -3.35px;
+}
+
+.pageMax{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.book-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-left{
+    margin-right: 10vw;
+}
+
+#page-right{
+    margin-left: 10vw;
+}
+
+.book-page-container{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.book-page-content{
+    max-width: 700px;
+    flex: 1;
+    padding: 15px 18px 10px 18px;
+    border: solid 1px black;
+}
+
+.book-page-content p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.book-page-content .tab{
+    text-indent: 5%;
+}
+
+.book-page-content h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; 
+    font-weight: 700;
+    font-style: bold;
+}
+
+.page-nav-content {
+    display: flex;
+    justify-content: center;
+}
+
+.page-nav-content li a
+{
+    text-decoration: underline;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.page-nav-content li{
+    padding: 5px 15px;
+}
+
+.page-nav-content li a:hover
+{
+    color: blue;
+}
+
+.page-nav-content li a:active
+{
+    color: blue;
+}
+
+#pageNumber-container{
+    display:flex;
+    justify-content: flex-end;
+}
+
+#pageNumber{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.page-nav-content ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.page-nav-container {
+    margin: 20px 0;
+}

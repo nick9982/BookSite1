@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+#book-purchase-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1600px;
+}
+
+.book-content{
+    margin: 100px 20px 0px 20px;
+    display: grid;
+    grid-template-areas: "image title p_options"
+                           "image description p_options"
+}
+
+.top-pane{
+    display:flex;
+}
+.book-title{
+    border-bottom: 1px solid black;
+    width: 87%;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+ }
+
+ .title-container{
+    grid-area: title;
+ }
+
+.right-pane{
+    grid-area: description;
+}
+
+.description-container p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.description-container {
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.book-image-container {
+    width: 250px;
+    height: 250px;
+}
+
+.book-image-and-read-sample{
+    grid-area: image;
+    margin: 40px 40px;
+    margin-top: 12px;
+    margin-left: 2vw;
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .book-content{
+        grid-template-areas: "image title"
+                            "image description"
+                            "p_options description";
+    }
+    .description-container{
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .book-content{
+        grid-template-areas:"title" 
+                            "image"
+                            "description"
+                            "p_options";
+        max-width: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 60px;
+        justify-content: center;
+    }
+
+    .book-image-and-read-sample{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .book-title{
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        width: 290px;
+    }
+
+    .title-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .purchase_content{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .description-container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .purchase_content{
+    }
+}
+
+.book-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: stretch;
+}
+
+#book-purchase-content-container {
+    display: flex;
+}
+
+.readSampleBtn{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 61px;
+    background-color: #04AA6D;
+    color: white;
+    border: solid 3px #04AA6D;
+    border-radius: 4px;
+    width: 250px;
+    margin-top: 2px;
+    
+}
+.readSampleBtn:hover{
+    background-color: white;
+    color: #04AA6D;
+    cursor: pointer;
+}
+.readSampleBtn:active{
+    outline-offset: -6px;
+    outline: 2px dotted currentColor;
+}

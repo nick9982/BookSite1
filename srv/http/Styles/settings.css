@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: #E7E7E7;
+}
+
+#page-outer-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-cont{
+    width: 80%;
+    margin-top: 60px;
+}
+
+#settings-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+
+#settings-description {
+    font-family: 'Ubuntu', sans-serif;
+    color: #424242;
+    margin-top: 10px;
+}
+
+#settings-page {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    display:grid;
+    grid-template-areas: 'a b';
+    grid-template-columns: 1fr 8fr;
+}
+
+#settings-tab-left{
+    border-right: 2px solid #E7E7E7;
+    margin-right: 50px;
+    padding-right: 50px;
+    margin-left: 30px;
+    grid-area: a;
+}
+
+#settings-content-right{
+    grid-area: b;
+}
+
+#settings-tab-left {
+    font-size: 20px;
+    color: #505050;
+
+}
+
+#settings-tab-left ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+
+#settings-tab-left li{
+    margin: 30px 0;
+    list-style-type: none;
+}
+
+#settings-content-right-container{
+    padding-top: 10px;
+}
+
+#settings-tab-left li:hover {
+    cursor:pointer;
+    color: black;
+}
+
+.textfield {
+    padding: 20px 15px;
+}
+.textfield p {
+    font-size: 16px;
+    color: #505050;
+    padding-bottom: 10px;
+}
+
+#purchaseHistoryTitle, #info-title {
+    margin-left: 15px;
+}
+
+#info-title {
+    margin-top: 20px;
+}
+
+#purchaseHistoryTitle {
+    margin-top: 5px;
+}
+
+.secondary-title {
+    font-size: 23px;
+}
+
+#purchaseHistoryContainer {
+    margin-left: 10px;
+    margin-top: 15px; 
+}
+
+#purchaseHistoryContainer th {
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#purchaseHistoryContainer td, #purchaseHistoryContainer th {
+    padding: 10px 20px;
+}
+
+#purchaseHistoryContainer th:nth-child(1){
+    padding-left: 0;
+}
+
+
+#purchaseHistoryContainer tr:nth-child(even){
+    background-color: #E7E7E7;
+}
+
+#purchaseHistoryContainer table{
+    border-collapse: collapse;
+}
+
+#purchaseHistoryContainer{
+    margin-bottom: 30px;
+}
+
+.detailsButton{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+}
+
+.detailsButton:hover{
+    cursor: pointer;
+}
+
+.purchase_detail_popup_container{
+    position: fixed;
+    height: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    top: 0;
+}
+
+.purchase_detail_popup{
+}

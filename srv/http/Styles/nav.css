@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+header {
+    background-color: #1C272A;
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px 16px;
+    color: white;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.navbar li {
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.burgerMenuContainer{
+    width: 0;
+    display: flex;
+}
+
+.burgerMenuContainer:hover{
+    cursor: pointer;
+}
+
+#burger{
+    visibility: hidden;
+    filter: invert(100%);
+    width: 25px;
+    padding-right:20px;
+}
+
+#close{
+    visibility: hidden;
+}
+
+.menuText{
+    visibility: hidden;
+    color: white;
+    padding-top: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+    margin-bottom: -30px;
+    padding: 20px 16px;
+}
+
+.navbar li:hover{
+    background-color: #000000;
+}
+
+#activeTab {
+    background-color:#04AA6D;
+}
+
+#activeTab li:hover {
+    background-color:#04AA6D;
+}
+
+.auth-btn{
+    margin: 16px 0;
+    padding: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+}
+
+.auth-btn:hover{
+    cursor:pointer;
+    color: grey;
+}
+
+.signup-btn:hover{
+    border: solid 1px grey;
+}
+
+.signup-btn{
+    border: solid 1px white;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+
+.signin-btn{
+    border: none;
+    margin: 0 8px;
+}
+
+#pop-up-nav-container{
+    visibility: collapse;
+    position: absolute;
+    top: 58px;
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    background: #FCFCFC;
+    clip-path: inset( -100vw -100vw -100vw 0 );
+    -webkit-clip-path: inset( -100vw -100vw -100vw 0 );
+}
+#pop-up-nav-container ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    width: 100%;
+    overflow-x: clip;
+}
+
+#pop-up-nav-container li{
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    height: 20px;
+    padding: 15px 30px;
+}
+
+#pop-up-nav-container a{
+    text-decoration: none;
+    color: #1C272A;
+    font-size: 18px;
+}
+
+
+#pop-up-nav-container li:hover a{
+    text-decoration: underline dotted;
+}
+
+#pop-up-nav-container li:hover{
+    cursor: pointer;
+}
+
+#pop-up-nav-container li:active a{
+    text-decoration: underline dotted;
+}
+
+@media (max-width: 700px) {
+    .navbar ul{
+        visibility: collapse;
+    }
+
+    .auth-button-cont{
+        visibility: collapse;
+    }
+
+    #burger{
+        visibility: visible;
+    }
+
+    .burgerMenuContainer{
+        width: auto;
+    }
+
+    .navbar
+    {
+        width: 100px;
+    }
+
+    .menuText
+    {
+        visibility: visible;
+    }
+}

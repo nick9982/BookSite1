@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.footer-container{
+    margin-top: 150px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 80px;
+}
+#footer-nav-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid #000;
+}
+
+#footer-nav ul{
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#footer-nav a {
+    display: block;
+    padding: 19.6px 16px;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+#footer-nav a:hover {
+    text-decoration: underline dotted;
+}
+#footer-nav a:active {
+    background-color: #1C272A;
+    color: #f1f1f1;
+}
+
+#footer-content {
+    width: 80vw;
+}
+
+#footer-info {
+    margin-top: 34px;
+}
+
+.logo-footer {
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}

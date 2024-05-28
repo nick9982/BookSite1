@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import "nav.css";
+@import "footer.css";
+
+*{
+    margin: 0;
+}
+
+.body-p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    font-size: 90px;
+}
+
+
+body {
+    color: #000;
+    overflow: visible;
+}
+
+.main-button{
+    background-color: #1C272A;
+    padding: 10px 12px;
+    color: #f1f1f1;
+    cursor: pointer;
+    border: 3px solid #1C272A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+
+}
+
+.main-button:active{
+    outline-offset: -6px;
+    outline: 2px dotted currentColor;
+}
+
+.main-button:hover{
+    background-color:#f1f1f1;
+    color: #1C272A;
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.form-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -70px;
+}
+
+.form-inner-container{
+    background-color: #EEF4FA;
+    border: solid 1px #DADADA;
+    width: 350px;
+    border-radius: 13px;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+.form-content label{
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.form-content .textfield{
+    padding: 8px 0;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    border: solid 1px #C1C1C1;
+}
+
+#auth-submit{
+    margin-top: 18px;
+    color: white;
+    background-color: #1C272A;
+    padding: 8px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#auth-submit:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+#auth-submit:active{
+    background-color: black;
+}
+
+#brandauth{
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#alt-option-txt{
+    margin-top: 4px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+#alt-option-txt a{
+    text-decoration: underline;
+    color: #04AA6D;
+}

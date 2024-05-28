@@ -1,0 +1,8 @@
+FDEBB9 yellow
+B1564C peach
+5C154F purple
+3C1F34 dark magenta
+1C272A dark color
+
+fonts:
+--global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
